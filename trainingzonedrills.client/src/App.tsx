@@ -23,7 +23,7 @@ function App() {
                     <th>Date</th>
                     <th>Temp. (C)</th>
                     <th>Temp. (F)</th>
-                    <th>Summary</th>
+                    <th>dwadw</th>
                 </tr>
             </thead>
             <tbody>
