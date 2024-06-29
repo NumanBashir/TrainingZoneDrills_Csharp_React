@@ -33,6 +33,7 @@ function App() {
                         <td>{forecast.temperatureC}</td>
                         <td>{forecast.temperatureF}</td>
                         <td>{forecast.summary}</td>
+                        NIGGGAAAA
                     </tr>
                 )}
             </tbody>
