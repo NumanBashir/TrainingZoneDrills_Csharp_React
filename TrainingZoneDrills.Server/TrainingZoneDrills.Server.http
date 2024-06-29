@@ -1,0 +1,6 @@
+@TrainingZoneDrills.Server_HostAddress = http://localhost:5240
+
+GET {{TrainingZoneDrills.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
