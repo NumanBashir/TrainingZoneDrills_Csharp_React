@@ -1,15 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
-    return (
-        <div>
-            <div className="bg-blue-500 text-white p-4">
-                <h1 className="text-2xl font-bold">Hello,  CSS!</h1>
-                <p className="mt-2">This is a test of Tailwind CSS integration.</p>
-            </div>
-        </div>
-    );
+  return (
+    <div className="pt-4 flex flex-col justify-center items-center">
+      <h1 className="text-4xl font-bold">Welcome To TrainingZone!</h1>
+      <p className="text-lg mt-2">
+        The Worlds Greatest Football Training Drills Platform
+      </p>
+    </div>
+  );
 }
 
 export default App;
