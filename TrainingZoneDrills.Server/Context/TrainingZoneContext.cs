@@ -11,9 +11,9 @@ namespace TrainingZoneDrills.Server.Context
         public DbSet<DrillCategory> DrillCategories { get; set; }
         public DbSet<DrillEquipment> DrillEquipments { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public TrainingZoneContext(DbContextOptions<TrainingZoneContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=DrillBank;Trusted_Connection=True;");
         }
 
 
