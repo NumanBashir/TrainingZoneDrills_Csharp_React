@@ -22,5 +22,18 @@ namespace TrainingZoneDrills.Server.Controllers
             var drills = await _context.Drills.ToListAsync();
             return Ok(drills);
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetDrill(int id)
+        {
+            var drill = await _context.Drills.FindAsync(id);
+
+            if (drill == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(drill);
+        }
     }
 }
