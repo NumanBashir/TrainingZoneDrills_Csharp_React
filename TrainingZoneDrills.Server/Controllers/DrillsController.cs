@@ -16,6 +16,7 @@ namespace TrainingZoneDrills.Server.Controllers
         }
 
         // GET: api/drills
+        // This method returns all drills
         [HttpGet]
         public async Task<IActionResult> GetAllDrills()
         {
@@ -23,6 +24,8 @@ namespace TrainingZoneDrills.Server.Controllers
             return Ok(drills);
         }
 
+        // GET: api/drills/id
+        // This method returns a specific drill by its ID
         [HttpGet("{id}")]
         public async Task<IActionResult> GetDrill(int id)
         {
