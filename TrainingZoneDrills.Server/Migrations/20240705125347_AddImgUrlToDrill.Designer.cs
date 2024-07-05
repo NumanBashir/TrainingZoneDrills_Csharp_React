@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TrainingZoneDrills.Server.Context;
 
@@ -10,9 +11,11 @@ using TrainingZoneDrills.Server.Context;
 namespace TrainingZoneDrills.Server.Migrations
 {
     [DbContext(typeof(TrainingZoneContext))]
-    partial class TrainingZoneContextModelSnapshot : ModelSnapshot
+    [Migration("20240705125347_AddImgUrlToDrill")]
+    partial class AddImgUrlToDrill
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -1,7 +1,7 @@
 import React from "react";
 
 interface DrillProps {
-    //imageUrl: string;
+    imgUrl: string;
     name: string;
     description: string;
 }
@@ -9,13 +9,15 @@ interface DrillProps {
 export const Drill: React.FC<DrillProps> = ({
     name,
     description,
+    imgUrl,
 }) => {
     return (
         <div className="card bg-base-100 w-60 shadow-xl">
             <figure>
                 <img
-                    src="https://sambasoccerschools.com/wp-content/uploads/2021/03/rondo-soccer.jpg"
-                    alt="Rondo"
+                    src={imgUrl}
+                    alt={name}
+                    className="object-cover h-48 w-96"
                 />
             </figure>
             <div className="card-body">

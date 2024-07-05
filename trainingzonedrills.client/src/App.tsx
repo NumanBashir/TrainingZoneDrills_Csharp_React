@@ -4,7 +4,7 @@ import { Drill } from "./components/Drill";
 import axios from "axios";
 
 const App = () => {
-    const [drills, setDrills] = useState<Drills[]>([]);
+    const [drills, setDrills] = useState<Drill[]>([]);
 
     useEffect(() => {
         axios.get(`https://localhost:7274/api/Drills/`).then((response) => {
@@ -28,7 +28,8 @@ const App = () => {
                     {drills.length > 0 ? (
                         drills.map((drill) => (
                             <Drill
-                                key={drill._id}
+                                key={drill.id}
+                                imgUrl={drill.imgUrl}
                                 name={drill.name}
                                 description={drill.description}
                             />
